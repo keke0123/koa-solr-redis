@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataConfig>
+<dataSource driver="org.mariadb.jdbc.Driver" url="jdbc:mariadb://112.170.100.209:8833/solr_02?autoReconnect=true" 
+  user="root" password="!dhtpal880123" />
+<document>
+   <entity name="document" query="SELECT id, product_name FROM solr_test ">
+    <field column="id" name="id" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+    <field column="product_name" name="product_name" type="txt_kr" />
+    <!-- <field name="product_name" type="txt_kr" indexed="true" stored="true"/> -->
+   </entity>
+</document>
+</dataConfig>
